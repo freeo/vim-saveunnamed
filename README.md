@@ -5,10 +5,10 @@ Adds a function to save a new, unnamed buffer to a default location.
 
 *Best practice*: Bind the function Autosave() to be executed right before
 `:bnext` and `:bprevious` , i.e.  switching away from the unnamed buffer.  
-    ```VimL
+```
     nnoremap <C-TAB> :call Autosave()<CR><bar>:bnext<CR>
     nnoremap <C-S-TAB> :call Autosave()<CR><bar>:bprevious<CR>
-    ```
+```
 
 The automatic filename has the following structure:  
 ```
